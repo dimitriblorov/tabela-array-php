@@ -1,17 +1,25 @@
 <?php
 $array = [
-    'nome' => 'Dimitri',
-    'idade' => 28,
-    'empresa' => 'home',
+    'nome' => 'Dimitri Blorov',
+    'idade' => 29,
+    'empresa' => 'auxi-digital',
     'cor' => 'vermelho',
-    'profissão' => 'dev web'
+    'profissão' => 'estagiário'
 ];
+
+$chaves = array_keys($array);
+$valores = array_values($array);
 ?>
+
 <table border="1">
-    <?php foreach($array as $chave => $valor): ?>
-        <tr>
+    <tr>
+        <?php foreach($chaves as $chave): ?
             <th><?php echo $chave; ?></th>
+        <?php endforeach; ?>
+    </tr>
+    <tr>
+        <?php foreach($valores as $valor): ?>
             <td><?php echo $valor; ?></td>
-        </tr>
-    <?php endforeach; ?>
+        <?php endforeach; ?>
+    </tr>         
 </table>
