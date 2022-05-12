@@ -6,6 +6,7 @@ $array = [
     'cor' => 'vermelho',
     'profissão' => 'estagiário'
 ];
+?>
 
 $chaves = array_keys($array);
 $valores = array_values($array);
